@@ -91,10 +91,11 @@ const StyledCard = styled(Card)<{ mode?: string }>`
     width: 100%;
     height: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
     padding: 0;
+    gap: 10px;
   }
 `;
 
