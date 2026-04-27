@@ -4,7 +4,6 @@ import { ContestProps } from "..";
 import Setting from "./Setting";
 import ManageTeams from "./ManageTeams";
 import EditInfo from "./EditInfo";
-import Competition from "./Competition";
 import EditTimeline from "./EditTimeline";
 
 const HardwareManager: React.FC<ContestProps> = ({ mode, user }) => {
@@ -28,19 +27,18 @@ const HardwareManager: React.FC<ContestProps> = ({ mode, user }) => {
             <Setting mode={mode} user={user} />
           </Col>
         </Row>
-        
+
         <Row gutter={{ xs: 8, sm: 16, md: 24 }} wrap={true}>
           <Col span={24}>
             <EditTimeline mode={mode} user={user} />
           </Col>
         </Row>
-        
+
         <Row gutter={{ xs: 8, sm: 16, md: 24 }} wrap={true}>
           <Col span={24}>
             <ManageTeams mode={mode} user={user} />
           </Col>
         </Row>
-        
       </Space>
     </Layout>
   );
